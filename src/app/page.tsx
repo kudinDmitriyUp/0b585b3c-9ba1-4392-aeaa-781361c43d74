@@ -71,28 +71,28 @@ export default function WeatherPage() {
           products={[
             {
               id: "new-york",
-              title: "New York",
+              name: "New York",
               price: "72°F",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815466293-6jz497jh.jpg",
               imageAlt: "New York skyline"
             },
             {
               id: "london",
-              title: "London",
+              name: "London",
               price: "64°F",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815467961-ugd07efq.jpg",
               imageAlt: "London cityscape"
             },
             {
               id: "tokyo",
-              title: "Tokyo",
+              name: "Tokyo",
               price: "68°F",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815467147-emmygr4w.jpg",
               imageAlt: "Tokyo metropolitan area"
             },
             {
               id: "sydney",
-              title: "Sydney",
+              name: "Sydney",
               price: "75°F",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815466293-6jz497jh.jpg",
               imageAlt: "Sydney harbor"
