@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
@@ -71,27 +71,31 @@ export default function WeatherPage() {
           products={[
             {
               id: "new-york",
+              name: "New York",
+              price: "72°F",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815466293-6jz497jh.jpg",
-              imageAlt: "New York weather",
-              button: { text: "View Details", href: "#" }
+              imageAlt: "New York skyline"
             },
             {
               id: "london",
+              name: "London",
+              price: "64°F",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815467961-ugd07efq.jpg",
-              imageAlt: "London weather",
-              button: { text: "View Details", href: "#" }
+              imageAlt: "London cityscape"
             },
             {
               id: "tokyo",
+              name: "Tokyo",
+              price: "68°F",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815467147-emmygr4w.jpg",
-              imageAlt: "Tokyo weather",
-              button: { text: "View Details", href: "#" }
+              imageAlt: "Tokyo metropolitan area"
             },
             {
               id: "sydney",
+              name: "Sydney",
+              price: "75°F",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815466293-6jz497jh.jpg",
-              imageAlt: "Sydney weather",
-              button: { text: "View Details", href: "#" }
+              imageAlt: "Sydney harbor"
             }
           ]}
         />
@@ -103,40 +107,31 @@ export default function WeatherPage() {
           description="Discover the advanced capabilities that make our platform the most trusted weather intelligence service worldwide"
           textboxLayout="default"
           useInvertedBackground="noInvert"
-          features={[
+          accordionItems={[
             {
-              id: 1,
-              tag: "Accuracy",
+              id: "1",
               title: "99.9% Accuracy Rate",
-              subtitle: "Precision forecasting you can rely on",
-              description: "Our advanced algorithms and global sensor network deliver the most accurate weather predictions available. Updated every 15 minutes with latest atmospheric data.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815469696-9k4ph2rv.jpg"
+              content: "Our advanced algorithms and global sensor network deliver the most accurate weather predictions available. Updated every 15 minutes with latest atmospheric data."
             },
             {
-              id: 2,
-              tag: "Real-Time",
+              id: "2",
               title: "Instant Updates",
-              subtitle: "Live weather as it happens",
-              description: "Get real-time weather alerts and condition updates directly to your device. Never miss a weather event with our intelligent notification system.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815470552-xyn1ci0q.jpg"
+              content: "Get real-time weather alerts and condition updates directly to your device. Never miss a weather event with our intelligent notification system."
             },
             {
-              id: 3,
-              tag: "Mobile",
+              id: "3",
               title: "Anywhere Access",
-              subtitle: "Weather on the go",
-              description: "Our mobile app provides complete weather intelligence in your pocket. Check conditions, get alerts, and plan your day with ease.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815471408-fblwdul1.jpg"
+              content: "Our mobile app provides complete weather intelligence in your pocket. Check conditions, get alerts, and plan your day with ease."
             },
             {
-              id: 4,
-              tag: "Alerts",
+              id: "4",
               title: "Smart Notifications",
-              subtitle: "Stay informed instantly",
-              description: "Personalized weather alerts tailored to your location and preferences. Get warned about severe weather before it arrives.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815472555-q0qyahys.jpg"
+              content: "Personalized weather alerts tailored to your location and preferences. Get warned about severe weather before it arrives."
             }
           ]}
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_36tAF3qMvze0yLCniNm13BmDdDd/uploaded-1765815469696-9k4ph2rv.jpg"
+          imageAlt="Weather dashboard"
+          mediaPosition="left"
         />
       </div>
       
